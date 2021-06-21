@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-single": "ng build --single-bundle",
+    "build:single": "ng build --single-bundle --configuration production",
+    "build:externals": "ng build --extra-webpack-config webpack.externals.js --single-bundle --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
